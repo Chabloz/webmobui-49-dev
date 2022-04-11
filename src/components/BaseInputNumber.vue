@@ -12,7 +12,7 @@
       required: false,
       default: 2
     },
-    unit: {
+    symbol: {
       type: String,
       required: false,
       default: ''
@@ -39,8 +39,8 @@
     type="number"
     v-model="value"
   >
-  <span v-show="unit">
-    {{ unit }}
+  <span v-show="symbol">
+    {{ symbol }}
   </span>
 </template>
 
@@ -58,7 +58,7 @@
     border: solid black 1px;
     background-color: #ddd;
     padding: 0 0.4rem;
-    min-width: 2rem;
+    min-width: 2.5rem;
     text-align: center;
     border-width: 1px 1px 1px 0;
   }
