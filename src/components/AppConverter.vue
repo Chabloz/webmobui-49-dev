@@ -8,6 +8,11 @@
       type: String,
       required: true
     },
+    // each unit must be an object int the units array like this one:
+    // [
+    //   {label: 'Kelvin', symbol: 'K', get: val => val, set: val => val}
+    //   {label: 'Celsius', symbol: '°C', get: val => val + 237.15, set: val => val - 273.15}
+    // ]
     units: {
       type: Array,
       required: true
@@ -48,7 +53,7 @@
       v-model="decimalPlaces"
       :decimal-places="0"
       min="0"
-      max="8"
+      max="12"
     />
   </template>
 

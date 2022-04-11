@@ -21,29 +21,21 @@
 
   const dataStorageUnits = [
     {
-      label: 'bit', symbol: 'b',
+      label: 'Byte', symbol: 'B',
       get: val => val,
       set: val => val
     }, {
-      label: 'Byte', symbol: 'B',
-      get: val => val / 8,
-      set: val => val * 8
-    }, {
-      label: 'Megabit', symbol: 'Mb',
-      get: val => val / 1000 ,
-      set: val => val * 1000
-    }, {
       label: 'Megabyte', symbol: 'MB',
-      get: val => val / 8000,
-      set: val => val * 8000
+      get: val => val / 1e+6,
+      set: val => val * 1e+6
     }, {
       label: 'Gigabyte', symbol: 'GB',
-      get: val => val / 8000000,
-      set: val => val * 8000000
+      get: val => val / 1e+9,
+      set: val => val * 1e+9
     }, {
       label: 'Terabyte', symbol: 'TB',
-      get: val => val / 8000000000,
-      set: val => val * 8000000000
+      get: val => val / 1e+12,
+      set: val => val * 1e+12
     }
   ];
 </script>
@@ -66,7 +58,7 @@
   <app-converter
     v-if="store.page == 'data-storage'"
     :units="dataStorageUnits"
-    :decimal-places="6"
+    :decimal-places="12"
     title="Data storage"
   />
 
