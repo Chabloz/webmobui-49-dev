@@ -25,9 +25,21 @@
       get: val => val,
       set: val => val
     }, {
+      label: 'Kilobyte', symbol: 'KB',
+      get: val => val / 1e+3,
+      set: val => val * 1e+3
+    }, {
+      label: 'Megabit', symbol: 'Mb',
+      get: val => (val * 8) / 1e+6,
+      set: val => (val / 8) * 1e+6
+    }, {
       label: 'Megabyte', symbol: 'MB',
       get: val => val / 1e+6,
       set: val => val * 1e+6
+    }, {
+      label: 'Gigabit', symbol: 'Gb',
+      get: val => (val * 8) / 1e+9,
+      set: val => (val / 8) * 1e+9
     }, {
       label: 'Gigabyte', symbol: 'GB',
       get: val => val / 1e+9,
