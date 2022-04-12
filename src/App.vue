@@ -36,10 +36,6 @@
       label: 'Terabyte', symbol: 'TB',
       get: val => val / 1e+12,
       set: val => val * 1e+12
-    }, {
-      label: 'Terabite', symbol: 'Tb',
-      get: val => val / 1e+12 * 8,
-      set: val => val * 1e+12 / 8
     }
   ];
 </script>
