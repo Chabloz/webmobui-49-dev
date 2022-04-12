@@ -57,7 +57,7 @@
     />
   </template>
 
-  <template v-for="(unit, index) in units">
+  <template v-for="(unit, index) in units" :key="index">
     <label>{{unit.label}}</label>
     <base-input-number
       v-model="computedValues[index].value"
