@@ -1,11 +1,11 @@
 <script setup>
-  import { store } from '../store.js';
+  import { page } from '../store.js';
 
   window.addEventListener('hashchange', () => {
-    store.page = window.location.hash.substring(1);
+    page.value = window.location.hash.substring(1);
   });
 
-  store.page = window.location.hash.substring(1) || 'home';
+  page.value = window.location.hash.substring(1) || 'home';
 
 </script>
 
@@ -17,7 +17,6 @@
       </li>
       <li>
         <a href="#temperature">Temperatures</a>
-
       </li>
       <li>
         <a href="#data-storage">Data storage</a>

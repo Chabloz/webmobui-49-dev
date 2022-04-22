@@ -1,5 +1,3 @@
-import { reactive } from 'vue';
+import { ref } from 'vue';
 
-export const store = reactive({
-  page: 'home'
-})
+export const page = ref('home');
