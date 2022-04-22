@@ -3,7 +3,7 @@
 Clone the repo
 
 ```sh
-git clone https://github.com/Chabloz/webmobui-49.git .
+git clone https://github.com/Chabloz/webmobui-49-dev.git
 ```
 
 Install dependencies
